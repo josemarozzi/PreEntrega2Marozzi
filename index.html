@@ -2,33 +2,45 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<!--Boostrap-->
+<link rel="stylesheet" href="./css/bootstrap.min.css">
 
+<!--mi style-->
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <!--menu de navegacion con listas-->
-  <header class="encabezadosTodo" id="top">
-  
-    <nav class="nav">
-      <ul>
-       <li><a href="index.html">Inicio</a></li> 
-         
-      
-        <li><a href="/pages/materiales.html">Materiales de Construcción</a></li>
-      
-      
-        <li><a href="./pages/nosotros.html">Nosotros</a></li>
-      
-      
-        <li><a href="./pages/contacto.html">Contactos</a></li>
-      <ul>
-    </nav>
-    </header>
+  <header class="encabezadosTodo" id="top"> 
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <nav class="nav">
+            <a class="navbar-brand" href="#"><img class="logo" src="./img/Logo GB.jpg"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              
+              <div class="row">
+              <ul class="col">
+              <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/materiales.html">Materiales de Construcción</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/ferreteria.html">Ferretería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
+                  </ul>
+                  </ul>
+                </div>
+                </div>
+              </nav>
+              </nav>
+    </div>
+</header>
 
     <title>Corralon Beccaria Graciela</title>
 
-
- <main><!--contenido -->
+<!--contenido -->
+ <main>
   <div style="width: 100%; height: auto; overflow: hidden;">
     <video autoplay loop muted playsinline style="width: 100%; height: auto;">
       <source src="./media/video.mp4" type="video/mp4">
@@ -48,6 +60,7 @@
     <img class="imagenFooter" src="../img/whatsapp.png" alt="Logo de WhatsApp">
   </a>
   </footer>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-

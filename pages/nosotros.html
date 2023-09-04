@@ -3,58 +3,84 @@
 <head>
 
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
- 
+ <!--Boostrap-->
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+
   <!-- Enlace al archivo de hojas de estilo CSS -->
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+    <title>Corralon Beccaria Graciela</title>
   <!-- Encabezado con menú de navegación -->
-  <header class="encabezadosTodo" id="top">
   
-    <nav class="nav">
-      <ul>
-        
-        <li><a href="../index.html">Inicio</a></li>
-        
-        <li><a href="/materiales.html">Materiales de Construcción</a></li>
-        
-        <li><a href="./nosotros.html">Nosotros</a></li>
-        
-        <li><a href="./contacto.html">Contactos</a></li>
-      </ul>
-    </nav>
-  </header>
+  <header class="encabezadosTodo" id="top">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <nav class="nav">
+            <a class="navbar-brand" href="#"><img class="logo" src="../img/Logo GB.jpg"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              
+              <div class="row">
+              <ul class="col">
+              <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./materiales.html">Materiales de Construcción</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./ferreteria.html">Ferretería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                  </ul>
+                  </ul>
+                </div>
+                </div>
+              </nav>
+              </nav>
+    </div>
+</header>
   
   <!-- Logo de la empresa -->
-  <img class="banner" src="../img/BECCARIA G.png" alt="logo de beccaria">
-  
+  <div class="container text-center mt-5">
+    <img class="banner" src="../img/BECCARIA G.png" alt="logo de beccaria">
+</div>
   <!-- Título de la sección -->
-  <h1>Nuestras instalaciones</h1>
+  <div class="container text-center mt-3">
+    <h1>Nuestras instalaciones</h1>
+  </div>
   
   <!-- Contenedor para video y texto -->
-  <div class="contenedor">
-    <!-- Video con controles -->
-    <video controls width="640" height="360" loop>
-      <source src="../media/videobg.mp4" type="video/mp4">
-      <p>Tu navegador no soporta el formato de video.</p>
-    </video>
-    
-    <!-- Texto descriptivo -->
-    <div class="texto">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae unde excepturi dolor necessitatibus explicabo modi laudantium, quod perferendis reiciendis sapiente eveniet earum quis ullam officiis, obcaecati exercitationem corrupti debitis ex. Temporibus facere quisquam consectetur unde in eaque, eveniet quo neque ea architecto ipsam natus tempora deleniti saepe, numquam corrupti necessitatibus porro cupiditate dolorum quas. Eaque praesentium repellat fugit odit rerum minus doloremque omnis maxime quasi repudiandae. Modi necessitatibus quia dolore debitis incidunt impedit a, illum iusto. Illum blanditiis esse, eos vitae ratione provident commodi facilis unde ipsa facere eius magnam ex asperiores mollitia ut in voluptate? Vel nesciunt iusto exercitationem.
-      </p>
+  <div class="container mt-5">
+    <div class="row align-items-center">
+        <!-- Video con controles -->
+        <div class="col-md-6">
+          <video autoplay muted loop width="80%" playsinline>
+            <source src="../media/videobg.mp4" type="video/mp4">
+            Tu navegador no soporta el formato de video.
+        </video>
+        </div>
+        
+        <!-- Texto descriptivo -->
+        <div class="col-md-6">
+            <div class="texto">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae unde excepturi dolor necessitatibus explicabo modi laudantium, quod perferendis reiciendis sapiente eveniet earum quis ullam officiis, obcaecati exercitationem corrupti debitis ex. Temporibus facere quisquam consectetur unde in eaque, eveniet quo neque ea architecto ipsam natus tempora deleniti saepe, numquam corrupti necessitatibus porro cupiditate dolorum quas. Eaque praesentium repellat fugit odit rerum minus doloremque omnis maxime quasi repudiandae. Modi necessitatibus quia dolore debitis incidunt impedit a, illum iusto. Illum blanditiis esse, eos vitae ratione provident commodi facilis unde ipsa facere eius magnam ex asperiores mollitia ut in voluptate? Vel nesciunt iusto exercitationem.
+                </p>
+            </div>
+        </div>
     </div>
-  </div>
+</div>
  
   <!-- Pie de página -->
   <footer>
-    <!-- Imagen de Instagram -->
-    <img class="imagenFooter" src="../img/instagram.png" alt="Logo de Instagram" >
     
-    <!-- Imagen de WhatsApp -->
-    <img class="imagenFooter" src="../img/whatsapp.png" alt="Logo de WhatsApp" >
+    <a href="https://www.instagram.com/corralon_beccariag" target="_blank">
+        <img class="imagenfooter" src="../img/instagram.png" alt="Logo de Instagram" >
+      </a>
+      <a href="https://api.whatsapp.com/send/?phone=543853144444&text=Hola%21+Me+gustar%C3%ADa+recibir+informaci%C3%B3n+sobre+esto.+Gracias&type=phone_number&app_absent=0" target="_blank">
+        <img class="imagenFooter" src="../img/whatsapp.png" alt="Logo de WhatsApp">
+      </a>
   </footer>
+  <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
