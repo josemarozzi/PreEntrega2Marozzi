@@ -1,195 +1,197 @@
-
+@charset "UTF-8";
 /* Configuración básica para el cuerpo del documento */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #75747425; /* Color de fondo gris claro */
-  }
-  
-  /* Estilos para los encabezados */
-  .encabezadosTodo {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* Estilos para la barra de navegación */
-  .nav {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    background-color: #f2f2f2;
-    padding: 10px 0;
-    width: 100%;
-  }
-  
-  .nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    padding: 10px 20px;
-    margin: 0 5px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .nav a:hover {
-    background-color: #ddd;
-  }
-  
-  /* Estilos para imágenes de venta */
-  .venta {
-    width: 20%;
-    height: 200px;
-    border: 3px solid #ccc;
-    border-radius: 10px;
-    margin: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 200px;
-  }
-  
-  /* Estilos para el pie de página */
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-  }
-  
-  /* Estilos para enlaces en el pie de página */
-  footer img {
-    margin: 0 5px;
-    width: 3%;
-    height: 50px;
-  }
-  
-  /* Estilos para la clase "caja" */
-  .caja {
-    display: inline-block;
-    padding: 10px 20px;
-    border: 2px solid #e0e0e0;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
-    margin: 0 5px;
-    transition: border-color 0.3s, box-shadow 0.3s;
-  }
-  
-  .caja a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .caja a:hover {
-    color: #ff0000;
-  }
-  
-  .caja:hover {
-    border-color: #ff0000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Estilos para listas no ordenadas y elementos de lista */
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  li {
-    display: inline-table;
-  }
-  
-  li a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    margin: 5px;
-    font-weight: bold;
-  }
-  
-  li a:hover {
-    background-color: #45a049;
-  }
-  
-  /* Estilos para imágenes de venta */
-  img.venta {
-    display: block;
-  }
-  
-  /* Estilos para la clase "imagenFooter" */
-  .imagenFooter {
-    width: 3%;
-    height: 50px;
-  }
-  .navbar {
-    margin-bottom: 20px; /* Espacio inferior para evitar que se pegue al contenido */
-  }
-  
-  /*color del menu*/
-  .col {
-    padding: 1.5rem;
-    background-color: #F7CAC9; 
-    border: 2px solid #C5E1A5; 
-    color: #333; 
-    border-radius: 6px; 
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
-    transition: background-color 0.3s, border-color 0.3s; 
-    cursor: pointer; 
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgba(117, 116, 116, 0.25); 
+}
+
+/* Estilos para los encabezados */
+.encabezadosTodo {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilos para la barra de navegación */
+.nav {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav a:hover {
+  background-color: #ddd;
+}
+
+/* Estilos para imágenes de venta */
+.venta {
+  width: 20%;
+  height: 200px;
+  border: 3px solid #ccc;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 200px;
+}
+
+/* Estilos para el pie de página */
+footer {
+  background-color: #333333;
+  color: rgba(255, 255, 255, 0);
+  text-align: center;
+  padding: 10px;
+  background: transparent;
+}
+
+/* Estilos para enlaces en el pie de página */
+footer img {
+  margin: 0 5px;
+  width: 3%;
+  height: 50px;
+  background: transparent;
+}
+
+/* Estilos para la clase "caja" */
+.caja {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  margin: 0 5px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.caja a {
+  text-decoration: none;
+  color: #333;
+}
+
+.caja a:hover {
+  color: #ff0000;
+}
+
+.caja:hover {
+  border-color: #ff0000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para listas no ordenadas y elementos de lista */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: inline-table;
+}
+
+li a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 5px;
+  font-weight: bold;
+}
+
+li a:hover {
+  background-color: #45a049;
+}
+
+/* Estilos para imágenes de venta */
+img.venta {
+  display: block;
+  width: 100%; 
+  height: auto; 
+}
+
+/* Estilos para la clase "imagenFooter" */
+.imagenFooter {
+  width: 3%;
+  height: 50px;
+}
+
+.navbar {
+  margin-bottom: 20px; 
+}
+
+/* Color del menú */
+.col {
+  padding: 1.5rem;
+  background-color: rgba(247, 202, 201, 0.8);
+  border: 2px solid #C5E1A5;
+  color: #333;
+  border-radius: 6px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, border-color 0.3s;
+  cursor: pointer;
 }
 
 .col:hover {
-    background-color: #F4A460; 
-    border-color: #8FBC8F; 
+  background-color: #F4A460;
+  border-color: #8FBC8F;
 }
 
 /* Estilos generales aquí */
-
 @media (max-width: 767px) {
-    /* Modifica los estilos aquí para dispositivos móviles */
-    body {
-        font-size: 16px; 
-    }
-    .col {
-        padding: 1rem;
-        background-color: #F7CAC9;
-        border: 2px solid #C5E1A5;
-        color: #333;
-        border-radius: 6px;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    }
+  /* movil */
+  body {
+    font-size: 16px;
+  }
+  .col {
+    padding: 1rem;
+    background-color: #F7CAC9;
+    border: 2px solid #C5E1A5;
+    color: #333;
+    border-radius: 6px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
 }
-
 /* Estilos para pantallas medianas y grandes */
 @media (min-width: 768px) {
-    
-    body {
-        font-size: 18px; 
-    }
-    .col {
-        padding: 1.5rem;
-        background-color: #F7CAC9;
-        border: 2px solid #C5E1A5;
-        color: #333;
-        border-radius: 8px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    }
+  body {
+    font-size: 18px;
+  }
+  .col {
+    padding: 1.5rem;
+    background-color: #F7CAC9;
+    border: 2px solid #C5E1A5;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
 }
 .logo {
   width: 100%;
-    height: 100px;
+  height: 100px;
 }
 
 .encabezadosTodo {
   position: relative;
-  background-image: url('../img/banner.jpeg');
-  background-size: 100% 100%; /* Ajusta el tamaño de la imagen de fondo */
+  background-image: url("../img/banner.jpeg");
+  background-size: 100% 100%; 
   background-position: center;
-  height: 300px; /* Ajusta la altura deseada para el encabezado */
+  height: 300px; 
 }
 
 .navbar {
@@ -198,32 +200,39 @@ body {
   left: 0;
   right: 0;
   z-index: 1;
-  background-color: rgba(255, 255, 255, 0.7); /* Color con transparencia */
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
-/* Aplicamos un fondo transparente al menú */
+/* fondo  menú */
 .navbar {
-  background-color: rgba(248, 248, 248, 0); /* Color con transparencia del 50% */
+  background-color: rgba(248, 248, 248, 0);
 }
 
-/* Ajustamos el estilo del texto del menú para que sea visible en el fondo transparente */
+/* Ajuste el estilo del texto del menú  */
 .navbar-nav .nav-link {
   color: #000; /* Color del texto */
 }
 
-/* Cambiamos el color del texto cuando el enlace está activo (por ejemplo, en la página actual) */
 .navbar-nav .nav-item.active .nav-link {
-  color: #fff; /* Cambia el color del texto cuando el enlace está activo */
+  color: #fff; 
 }
 
 .navbar {
-  background-color: rgba(255, 255, 255, 0); 
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .nav {
-  background-color: rgba(255, 255, 255, 0); 
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .col {
-  background-color: rgba(255, 255, 255, 0.336); 
+  background-color: rgba(255, 255, 255, 0.753);
+  width: 70%; 
 }
+
+.navbar-brand.mr-auto {
+  margin-right: auto; 
+  margin-left: 0; 
+}
+
+/*# sourceMappingURL=style.css.map */

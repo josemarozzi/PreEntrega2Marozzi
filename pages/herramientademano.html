@@ -39,23 +39,95 @@
 </header>
   
   <!-- Lista de enlaces de productos -->
-  <ul>
-    
-    <li><a href="./herramientademano.html">Herramienta de Mano</a></li>
-    
-    <li><a href="./herramientaselectricas.html">Herramientas Eléctricas</a></li>
-  
-    <li><a href="./materialeselectricos.html">Materiales Eléctricos</a></li>
-  </ul>
+  <ul class="nav">
+    <li class="nav-item">
+        <a class="nav-link btn btn-primary" href="./herramientademano.html">Herramienta de Mano</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link btn btn-primary" href="./herramientaselectricas.html">Herramientas Eléctricas</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link btn btn-primary" href="./materialeselectricos.html">Materiales Eléctricos</a>
+    </li>
+</ul>
+
   
   
 </head>
 <body>
   <!-- Imágenes de productos -->
-  <img class="venta" src="../img/palas.webp" alt="pala">
-  <img class="venta" src="../img/destornillador.png" alt="destornillador">
-  <img class="venta" src="../img/martillo.webp" alt="martillo">
-  <img class="venta" src="../img/pinza.png" alt="pinza">
+  <div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <!-- Producto 1 -->
+            <div class="card h-100">
+              <div class="d-flex justify-content-center align-items-center">
+                <img class="venta" src="../img/palas.webp" class="card-img-top" alt="Pala">
+                <div class="card-body">
+                    <h5 class="card-title">Pala de Mano</h5>
+                    <p class="card-text">Pala de mano en forma de punta.</p>
+                    <p class="card-text">Precio: $15.500</p>
+                    <label for="cantidadPala">Cantidad:</label>
+                    <input type="number" id="cantidadPala" class="form-control" value="1">
+                    <button class="btn btn-primary mt-2">Agregar al carrito</button>
+                  </div>
+                  </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <!-- Producto 2 -->
+            <div class="card h-100">
+              <div class="d-flex justify-content-center align-items-center">
+                <img class="venta" src="../img/destornillador.png" class="card-img-top" alt="Destornillador">
+                <div class="card-body">
+                    <h5 class="card-title">Destornillador</h5>
+                    <p class="card-text">Destornillador Marca Poll.</p>
+                    <p class="card-text">Precio: $1750</p>
+                    <label for="cantidadDestornillador">Cantidad:</label>
+                    <input type="number" id="cantidadDestornillador" class="form-control" value="1">
+                    <button class="btn btn-primary mt-2">Agregar al carrito</button>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <!-- Producto 3 -->
+            <div class="card h-100">
+              <div class="d-flex justify-content-center align-items-center">
+                <img class="venta" src="../img/martillo.webp" class="card-img-top" alt="Martillo">
+                <div class="card-body">
+                    <h5 class="card-title">Martillo</h5>
+                    <p class="card-text">Martillo marca Poll.</p>
+                    <p class="card-text">Precio: $2500</p>
+                    <label for="cantidadMartillo">Cantidad:</label>
+                    <input type="number" id="cantidadMartillo" class="form-control" value="1">
+                    <button class="btn btn-primary mt-2">Agregar al carrito</button>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <!-- Producto 4 -->
+          <div class="card h-100">
+            <div class="d-flex justify-content-center align-items-center">
+              <img class="venta" src="../img/pinza.png" class="card-img-top" alt="Pinza">
+              <div class="card-body">
+                  <h5 class="card-title">Pinza</h5>
+                  <p class="card-text">Pinza Marca Poll.</p>
+                  <p class="card-text">Precio: $2899</p>
+                  <label for="cantidadMartillo">Cantidad:</label>
+                  <input type="number" id="cantidadMartillo" class="form-control" value="1">
+                  <button class="btn btn-primary mt-2">Agregar al carrito</button>
+              </div>
+          </div>
+        </div>
+      </div>
+      </div>       
+</div>
+  
+  
+  
   
  <!-- Pie de página -->
  <footer>
