@@ -11,17 +11,16 @@
 <body>
   <title>Corralon Beccaria Graciela</title>
   <!-- Encabezado con menú de navegación -->
-  <header class="encabezadosTodo" id="top">
+  <header class="encabezadosTodo" id="top"> 
     <div class="container">
         <nav class="navbar navbar-expand-lg">
           <nav class="nav">
-            <a class="navbar-brand" href="#"><img class="logo" src="../img/Logo GB.jpg"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand mr-auto" href="#"><img class="logo" src="../img/logo gb1.jpg"></a>
+            <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-              
-              <div class="row">
+              <div class="row justify-content-end">
               <ul class="col">
               <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
@@ -55,55 +54,59 @@
  <!-- Imágenes de productos -->
  <div class="container mt-5">
   <div class="row">
-      <div class="col-md-4 mb-4">
-          <!-- Producto 1 -->
-          <div class="card h-100">
-            <div class="d-flex justify-content-center align-items-center">
-              <img class="venta" src="../img/maquinadesoldadura.jpg" class="card-img-top" alt="Maquina Soldadora">
-              <div class="card-body">
-                  <h5 class="card-title">Maquina Soldadora</h5>
-                  <p class="card-text">Maquina de Soldadura.</p>
-                  <p class="card-text">Precio: $98.500</p>
-                  <label for="cantidadPala">Cantidad:</label>
-                  <input type="number" id="cantidadPala" class="form-control" value="1">
-                  <button class="btn btn-primary mt-2">Agregar al carrito</button>
-                </div>
-                </div>
-          </div>
-      </div>
-      <div class="col-md-4 mb-4">
-          <!-- Producto 2 -->
-          <div class="card h-100">
-            <div class="d-flex justify-content-center align-items-center">
-              <img class="venta" src="../img/soldador.jpg" class="card-img-top" alt="Soldador de lapiz">
-              <div class="card-body">
-                  <h5 class="card-title">Soldador de Lapiz</h5>
-                  <p class="card-text">Soldador de lapiz Poll.</p>
-                  <p class="card-text">Precio: $5750</p>
-                  <label for="cantidadDestornillador">Cantidad:</label>
-                  <input type="number" id="cantidadDestornillador" class="form-control" value="1">
-                  <button class="btn btn-primary mt-2">Agregar al carrito</button>
-              </div>
+    <div class="col-md-4 mb-4">
+      <!-- Producto 1 -->
+      <div class="card h-100">
+        <div class=" justify-content-center align-items-center">
+          <img class="venta img-fluid" src="../img/maquinadesoldadura.jpg" class="card-img-top" alt="Maquina Soldadora">
+          <div class="card-body">
+            <h5 class="card-title">Maquina Soldadora</h5>
+            <p class="card-text">Maquina de Soldadura.</p>
+            <p class="card-text">Precio: $98.500</p>
+            <label for="cantidadPala">Cantidad:</label>
+            <input type="number" id="cantidadPala" class="form-control" value="1">
+            <button class="btn btn-primary mt-2">Agregar al carrito</button>
           </div>
         </div>
       </div>
-      <div class="col-md-4 mb-4">
-          <!-- Producto 3 -->
-          <div class="card h-100">
-            <div class="d-flex justify-content-center align-items-center">
-              <img class="venta" src="../img/Optech-visor-Fotosensible-Steelpro-careta-Soldador.jpg" class="card-img-top" alt="Mascara de soldador">
-              <div class="card-body">
-                  <h5 class="card-title">Mascara de Soldadora</h5>
-                  <p class="card-text">Mascara Poll.</p>
-                  <p class="card-text">Precio: $12500</p>
-                  <label for="cantidadMartillo">Cantidad:</label>
-                  <input type="number" id="cantidadMartillo" class="form-control" value="1">
-                  <button class="btn btn-primary mt-2">Agregar al carrito</button>
-              </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <!-- Producto 2 -->
+      <div class="card h-100">
+        <div class=" justify-content-center align-items-center">
+          <img class="venta img-fluid" src="../img/soldador.jpg" class="card-img-top" alt="Soldador de lapiz">
+          <div class="card-body">
+            <h5 class="card-title">Soldador de Lapiz</h5>
+            <p class="card-text">Soldador de lapiz Poll.</p>
+            <p class="card-text">Precio: $5750</p>
+            <label for="cantidadDestornillador">Cantidad:</label>
+            <input type="number" id="cantidadDestornillador" class="form-control" value="1">
+            <button class="btn btn-primary mt-2">Agregar al carrito</button>
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <!-- Producto 3 -->
+      <div class="card h-100">
+        <div class=" justify-content-center align-items-center">
+          <img class="venta img-fluid" src="../img/Optech-visor-Fotosensible-Steelpro-careta-Soldador.jpg" class="card-img-top" alt="Mascara de soldador">
+          <div class="card-body">
+            <h5 class="card-title">Mascara de Soldadora</h5>
+            <p class="card-text">Mascara Poll.</p>
+            <p class="card-text">Precio: $12500</p>
+            <label for="cantidadMartillo">Cantidad:</label>
+            <input type="number" id="cantidadMartillo" class="form-control" value="1">
+            <button class="btn btn-primary mt-2">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
+
 
    <!-- Pie de página -->
    <footer>
