@@ -1,7 +1,7 @@
 /* Configuración básica para el cuerpo del documento */
 body {
   margin: 0;
-  padding: 0;
+  padding:  auto;
   font-family: Arial, sans-serif;
   background-color: rgba(#757474, 0.25); /* Color de fondo gris claro */
 }
@@ -86,11 +86,15 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
+  
+  
   /* Estilos para listas no ordenadas y elementos de lista */
   ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0%;
+    width: 100%;
+    max-width: 100%;
   }
   
   li {
@@ -131,14 +135,15 @@ body {
   
   /* Color del menú */
   .col {
-    padding: 1.5rem;
+    
     background-color: rgba(#F7CAC9, 0.8);
-    border: 2px solid #C5E1A5;
+  
     color: #333;
     border-radius: 6px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+   
     transition: background-color 0.3s, border-color 0.3s;
     cursor: pointer;
+    
   }
   
   .col:hover {
@@ -154,12 +159,14 @@ body {
       font-size: 16px;
     }
     .col {
-      padding: 1rem;
+      
+      position:relative;
       background-color: #F7CAC9;
-      border: 2px solid #C5E1A5;
+      justify-content: end;
       color: #333;
       border-radius: 6px;
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      
+      
     }
   }
   
@@ -169,12 +176,12 @@ body {
       font-size: 18px;
     }
     .col {
-      padding: 1.5rem;
+      
       background-color: #F7CAC9;
-      border: 2px solid #C5E1A5;
+      
       color: #333;
       border-radius: 8px;
-      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+     
     }
   }
   
@@ -233,3 +240,47 @@ body {
     margin-left: 0; /* Evitar el margen izquierdo, si lo hubiera */
   }
   
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+  }
+
+  /* Define la animación de pulso */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/* menu hamburguesa*/
+
+.navbar-toggler-icon {
+  color: rgb(241, 219, 22); 
+  font-size: 30px;
+  margin-right: 5px; 
+  max-width: 100%;
+  background-color: rgba(238, 184, 6, 0.322);
+  
+}
+.col {
+  .mia {
+    padding: 0%;
+  }
+}
+
+

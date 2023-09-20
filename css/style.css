@@ -2,9 +2,9 @@
 /* Configuración básica para el cuerpo del documento */
 body {
   margin: 0;
-  padding: 0;
+  padding: auto;
   font-family: Arial, sans-serif;
-  background-color: rgba(117, 116, 116, 0.25); 
+  background-color: rgba(117, 116, 116, 0.25); /* Color de fondo gris claro */
 }
 
 /* Estilos para los encabezados */
@@ -96,7 +96,9 @@ footer img {
 ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0%;
+  width: 100%;
+  max-width: 100%;
 }
 
 li {
@@ -121,8 +123,8 @@ li a:hover {
 /* Estilos para imágenes de venta */
 img.venta {
   display: block;
-  width: 100%; 
-  height: auto; 
+  width: 100%; /* Ajusta el ancho al 100% del contenedor */
+  height: auto; /* Mantiene la proporción original de la imagen */
 }
 
 /* Estilos para la clase "imagenFooter" */
@@ -132,17 +134,14 @@ img.venta {
 }
 
 .navbar {
-  margin-bottom: 20px; 
+  margin-bottom: 20px; /* Espacio inferior para evitar que se pegue al contenido */
 }
 
 /* Color del menú */
 .col {
-  padding: 1.5rem;
   background-color: rgba(247, 202, 201, 0.8);
-  border: 2px solid #C5E1A5;
   color: #333;
   border-radius: 6px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s, border-color 0.3s;
   cursor: pointer;
 }
@@ -153,21 +152,17 @@ img.venta {
 }
 
 /* Estilos generales aquí */
-
-
-
 @media (max-width: 767px) {
-  /* movil */
+  /* Modifica los estilos aquí para dispositivos móviles */
   body {
     font-size: 16px;
   }
   .col {
-    padding: 1rem;
+    position: relative;
     background-color: #F7CAC9;
-    border: 2px solid #C5E1A5;
+    justify-content: end;
     color: #333;
     border-radius: 6px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   }
 }
 /* Estilos para pantallas medianas y grandes */
@@ -176,12 +171,9 @@ img.venta {
     font-size: 18px;
   }
   .col {
-    padding: 1.5rem;
     background-color: #F7CAC9;
-    border: 2px solid #C5E1A5;
     color: #333;
     border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
   }
 }
 .logo {
@@ -192,9 +184,9 @@ img.venta {
 .encabezadosTodo {
   position: relative;
   background-image: url("../img/banner.jpeg");
-  background-size: 100% 100%; 
+  background-size: 100% 100%; /* Ajusta el tamaño de la imagen de fondo */
   background-position: center;
-  height: 300px; 
+  height: 300px; /* Ajusta la altura deseada para el encabezado */
 }
 
 .navbar {
@@ -217,7 +209,7 @@ img.venta {
 }
 
 .navbar-nav .nav-item.active .nav-link {
-  color: #fff; 
+  color: #fff; /* Cambia el color del texto cuando el enlace está activo */
 }
 
 .navbar {
@@ -230,12 +222,49 @@ img.venta {
 
 .col {
   background-color: rgba(255, 255, 255, 0.753);
-  width: 70%; 
+  width: 70%; /* Ancho automático según el contenido */
 }
 
 .navbar-brand.mr-auto {
-  margin-right: auto; 
-  margin-left: 0; 
+  margin-right: auto; /* Mover hacia la izquierda tanto como sea posible */
+  margin-left: 0; /* Evitar el margen izquierdo, si lo hubiera */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Define la animación de pulso */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* menu hamburguesa*/
+.navbar-toggler-icon {
+  color: rgb(241, 219, 22);
+  font-size: 30px;
+  margin-right: 5px;
+  max-width: 100%;
+  background-color: rgba(238, 184, 6, 0.322);
+}
+
+.col .mia {
+  padding: 0%;
 }
 
 /*# sourceMappingURL=style.css.map */
