@@ -13,6 +13,17 @@ body {
   padding: 20px;
   text-align: center;
 }
+.encabezadosTodo h1 {
+  font-size: 24px; /* Tamaño de fuente */
+  color: #e48407; /* Color del texto */
+  text-align: center; /* Alineación del texto */
+  /* Otros estilos que desees aplicar */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-70%, 280%); /* Centrar vertical y horizontalmente */
+  font-family: "Tu Fuente Personalizada", Arial, sans-serif;
+}
 
 /* Estilos para la barra de navegación */
 .nav {
@@ -222,12 +233,15 @@ img.venta {
 
 .col {
   background-color: rgba(255, 255, 255, 0.753);
-  width: 70%; /* Ancho automático según el contenido */
+  width: 100%; /* Cambiar el ancho a 100% */
+}
+
+.col-mia {
+  padding: 0; /* Cambiar a 0 para eliminar el espacio interior */
 }
 
 .navbar-brand.mr-auto {
-  margin-right: auto; /* Mover hacia la izquierda tanto como sea posible */
-  margin-left: 0; /* Evitar el margen izquierdo, si lo hubiera */
+  margin-right: 500px; /* Mover hacia la izquierda tanto como sea posible */
 }
 
 @keyframes fadeIn {
@@ -258,13 +272,10 @@ img.venta {
 .navbar-toggler-icon {
   color: rgb(241, 219, 22);
   font-size: 30px;
+  margin-left: -5px; /* Establecer un margen izquierdo negativo */
   margin-right: 5px;
   max-width: 100%;
   background-color: rgba(238, 184, 6, 0.322);
-}
-
-.col .mia {
-  padding: 0%;
 }
 
 /*# sourceMappingURL=style.css.map */
